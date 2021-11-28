@@ -3,19 +3,9 @@
 1. [ Dropwizard Web service. ](#drop)
 2. [ React UI. ](#react)
 3. [ Python Flask Rest web service. ](#python)
- 3.1 [ Python Flask Docker Instrcutions ](#docker)
- 4 [ Access Deployed REST web service ](#oci)
+4. [ Python Flask Docker Instrcutions ](#docker)
+5. [ Access Deployed REST web service ](#oci)
 
-
-<a name="desc"></a>
-## 1. Description
-
-sometext
-
-<a name="usage"></a>
-## 2. Usage tips
-
-sometext
 
 
 <a name="drop"></a>
