@@ -1,5 +1,24 @@
 # SA53_bhuvesh_kumar_fibonacci
 
+1. [ Dropwizard Web service. ](#drop)
+2. [ React UI. ](#react)
+3. [ Python Flask Rest web service. ](#python)
+ 3.1 [ Python Flask Docker Instrcutions ](#docker)
+ 4 [ Access Deployed REST web service ](#oci)
+
+
+<a name="desc"></a>
+## 1. Description
+
+sometext
+
+<a name="usage"></a>
+## 2. Usage tips
+
+sometext
+
+
+<a name="drop"></a>
 # REST web service using Dropwizard along with UI interface in React
 ![image](https://user-images.githubusercontent.com/62707309/143731209-32ffcbce-e848-400c-87c9-85a4bf736bb6.png)
 
@@ -96,7 +115,7 @@ API side message:
 
 
 
-
+<a name="python"></a>
 # Python and Flask REST web service  http://168.138.176.208/ 
 ![image](https://user-images.githubusercontent.com/62707309/143732407-59487492-d04c-4a55-9c9a-aeadf2cd00cf.png)
 
@@ -124,7 +143,7 @@ it will return me the following JSON:
 ```
 
 
-
+<a name="oci"></a>
 # Deployed on OCI (Oracle Cloud Infrastructure)
 The web service has been deployed on OCI and can we accessed using 
 
@@ -132,6 +151,7 @@ Link of the global API (hosted on OCI): http://168.138.176.208/ ;
 
 Link to call API in your program: http://168.138.176.208/fibonacci
 
+<a name="docker"></a>
 # Build and Run Docker image using Dockerfile
 the docker file helps to build an image of program which can later be run in a container.
 To do so, please follow the commands
@@ -198,8 +218,10 @@ Although the API and webpage resides in the same program, the function calls API
 
 
 
-
+<a name="react"></a>
 # React web app to call API to computer fibonacci sequence
+![image](https://user-images.githubusercontent.com/62707309/143734946-118373db-a29a-40d5-b5b9-d1da23c45a00.png)
+
 Simple react web app which takes number value from user and calls an API to compute the fibonacci sequence.
 
 **Link of the dropwizard API:** https://github.com/bhuveshsharma09/my-dropwiz-app
