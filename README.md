@@ -11,14 +11,19 @@
 <a name="drop"></a>
 # REST web service using Dropwizard along with UI interface in React
 ![image](https://user-images.githubusercontent.com/62707309/143731209-32ffcbce-e848-400c-87c9-85a4bf736bb6.png)
+1. [ Functionality ](#func)
+2. [ Example ](#ex)
+3. [ Dependencies ](#dep_drop)
+4. [ Port configuration ](#config_drop)
+5. [ Testing ](#testing_drop)
 
-
+<a name="func"></a>
 ### Functionality
 The web service takes in a numerical value between 1 to 100, and returns the Fibonacci sequence, as well as a sequence that is sorted using the following conditions:
 * Even numbers first, in descending order
 * Odd numbers, in descending order
 
-
+<a name="ex"></a>
 ### Example: 
 If user does a http get to http://myserver:8000/fibonacci with the following json payload:
 ```json
@@ -37,7 +42,7 @@ it will return me the following JSON:
 ```
 
 
-
+<a name="dep_drop"></a>
 # Dependencies
 
 * Maven dropwizard-core
@@ -62,8 +67,8 @@ it will return me the following JSON:
 </
 ```
 
-
-# Port confifuration
+<a name="config_drop"></a>
+# Port configuration
 
 The application port is set at 9090 and admin port is at 9091
 
@@ -85,7 +90,7 @@ cors.setInitParameter("allowedMethods", "OPTIONS,GET,PUT,POST,DELETE,HEAD");
 
 ```
 
-
+<a name="testing_drop"></a>
 # Testing
 
 ## Using Postman 
@@ -105,16 +110,29 @@ API side message:
 
 
 
+
+
+
 <a name="python"></a>
 # Python and Flask REST web service  http://168.138.176.208/ 
 ![image](https://user-images.githubusercontent.com/62707309/143732407-59487492-d04c-4a55-9c9a-aeadf2cd00cf.png)
+1. [ Functionality ](#func_p)
+2. [ Example ](#ex_p)
+3. [ Dependencies ](#dep_p)
+4. [ Port configuration ](#config_p)
+5. [ Testing ](#testing_p)
+6. [ Docker build ](#docker_p)
 
+
+
+
+<a name="func_p"></a>
 ### Functionality
 The web service takes in a numerical value between 1 to 100, and returns the Fibonacci sequence, as well as a sequence that is sorted using the following conditions:
 * Even numbers first, in descending order
 * Odd numbers, in descending order
 
-
+<a name="ex_p"></a>
 ### Example: 
 If user does a http get to http://myserver:8000/fibonacci with the following json payload:
 ```json
@@ -132,7 +150,6 @@ it will return me the following JSON:
 }
 ```
 
-
 <a name="oci"></a>
 # Deployed on OCI (Oracle Cloud Infrastructure)
 The web service has been deployed on OCI and can we accessed using 
@@ -140,7 +157,7 @@ The web service has been deployed on OCI and can we accessed using
 Link of the global API (hosted on OCI): http://168.138.176.208/ ;
 
 Link to call API in your program: http://168.138.176.208/fibonacci
-
+<a name="docker_p"></a>
 <a name="docker"></a>
 # Build and Run Docker image using Dockerfile
 the docker file helps to build an image of program which can later be run in a container.
@@ -162,7 +179,7 @@ $ docker run -d -p 80:80 my-flask-app
 
 ```
 
-
+<a name="dep_p"></a>
 # How to use 
 ### clone the repo
 ```
@@ -180,14 +197,14 @@ $ python3 -m pip install -r requirements.txt
 ```
 python3 app.py
 ```
-
+<a name="config_p"></a>
 # Configuration
 Current configuration for host is '0.0.0.0' and port is 80
 
 # Functional prototype deployed at OCI
 Link: http://168.138.176.208/
 
-
+<a name="testing_p"></a>
 # Testing
 * **Step 1:** Go to  http://168.138.176.208/ and enter a number in input field and hit 'compute' button
 ![image](https://user-images.githubusercontent.com/62707309/143731935-b338e16d-d7cb-416c-8ddb-c1740eeef6c0.png)
@@ -206,11 +223,18 @@ The API request url is http://168.138.176.208/fibonacci/ . Only for the demo pur
 Although the API and webpage resides in the same program, the function calls API link to fullfil the requirment.
 
 
-
+<br />
+<br />
 
 <a name="react"></a>
 # React web app to call API to computer fibonacci sequence
 ![image](https://user-images.githubusercontent.com/62707309/143734946-118373db-a29a-40d5-b5b9-d1da23c45a00.png)
+
+1. [ Dependencies ](#dep_r)
+2. [ Testing ](#testing_r)
+
+
+
 
 Simple react web app which takes number value from user and calls an API to compute the fibonacci sequence.
 
@@ -222,13 +246,13 @@ Simple react web app which takes number value from user and calls an API to comp
 
 
 
-
+<a name="dep_r"></a>
 # Dependencies
 * Formik
 ```
  npm install formik --save
 ```
-
+<a name="testing_r"></a>
 # Testing
 * Loading the webpage in web browser
 
